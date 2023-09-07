@@ -1,0 +1,8 @@
+.chat{
+    background-color: green;
+    color: white;
+    width: 90px;
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+}
