@@ -1,0 +1,75 @@
+.body {
+    width: 195.3vh;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    height: 100px;
+    background-color: #D9D9D9;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    margin: -8px -8px -8px -8px;
+}
+
+button {
+    border: none;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #414042;
+    font-family: 'Poppins';
+    font-weight: 700;
+    margin-left: 40px;
+}
+
+.name {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.anchor {
+    margin-right: -20px;
+}
+
+.buttons {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 60px;
+    height: 30px;
+    width: 100px;
+    color: black;
+    border: none;
+    transition: text-shadow 1s;
+}
+
+.login {
+    background-color: #38A755;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 700;
+    height: 45px;
+    width: 150px;
+    border-radius: 30px;
+    margin-right: 60px;
+    font-size: 14px;
+    box-shadow: 2px 3px 10px rgb(138, 138, 138);
+}
+
+.buttons:hover {
+    cursor: pointer;
+    text-shadow: 2px 2px 3px grey;
+}
+
+.start:hover {
+    cursor: pointer;
+}

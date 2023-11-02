@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&display=swap');
+
+
+.body {
+    width: 195.3vh;
+    height: 100vh;
+    margin: -8px -8px -8px -8px;
+}
+
+Toaster {
+    font-family: 'Poppins';
+}

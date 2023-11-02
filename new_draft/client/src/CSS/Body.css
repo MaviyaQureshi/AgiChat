@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.container {
+    display: flex;
+}
+
+.water {
+    position: fixed;
+    top: 200px;
+    right: 150px;
+    width: 600px;
+    height: 460px;
+}
+
+.typewriter {
+    font-family: 'Poppins';
+    margin-top: 150px;
+    margin-left: 150px;
+    width: 450px;
+}
+
+.c1 {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid white;
+    animation: typewriter_1 steps(13) 1s 1 normal both, first_cursor 900ms steps(13) 1;
+}
+
+@keyframes typewriter_1 {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 40%;
+    }
+}
+
+@keyframes first_cursor {
+    from {
+        border-right-color: rgba(17, 17, 17, 0.9);
+    }
+
+    to {
+        border-right-color: rgba(255, 255, 255);
+    }
+}
+
+.c2 {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid white;
+    animation: typewriter_2 steps(13) 1s 1 normal both, second_cursor 900ms steps(13) 1;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+@keyframes typewriter_2 {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 62%;
+    }
+}
+
+@keyframes second_cursor {
+    from {
+        border-right-color: rgba(17, 17, 17, 0.9);
+    }
+
+    to {
+        border-right-color: rgba(255, 255, 255);
+    }
+}
+
+.c3 {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid white;
+    animation: typewriter_3 steps(13) 1s 1 normal both, third_cursor 900ms steps(13) 1;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+@keyframes typewriter_3 {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 101%;
+    }
+}
+
+@keyframes third_cursor {
+    from {
+        border-right-color: rgba(17, 17, 17, 0.9);
+    }
+
+    to {
+        border-right-color: rgba(255, 255, 255);
+    }
+}
+
+.c4 {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid white;
+    animation: typewriter_4 steps(13) 1s 1 normal both, fourth_cursor 900ms steps(13) infinite;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+@keyframes typewriter_4 {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes fourth_cursor {
+    from {
+        border-right-color: rgba(17, 17, 17, 0.9);
+    }
+
+    to {
+        border-right-color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.start {
+    margin-top: 60px;
+    height: 90px;
+    width: 450px;
+    padding-right: 100px;
+    background-color: #38A755;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-weight: 700;
+    border-bottom-right-radius: 70px;
+    box-shadow: 2px 3px 10px rgb(138, 138, 138);
+}
