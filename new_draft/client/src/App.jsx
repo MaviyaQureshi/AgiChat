@@ -9,6 +9,7 @@ import Register from './components/login/Register';
 import Recovery from './components/login/Recovery';
 import Reset from './components/login/Reset';
 import PageNotFound from './components/login/PageNotFound';
+import Library from './components/library/Library';
 
 // auth middleware
 import { AuthorizeUser, ProtectRoute } from './login-middleware/middleware/auth'
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
   {
     path: '/dashboard',
     element: <DashBoard></DashBoard>
+  },
+  {
+    path: '/inventory',
+    element: <ProtectRoute><Library></Library></ProtectRoute>
   },
   {
     path: '*',

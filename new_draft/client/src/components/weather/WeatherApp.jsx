@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import WeatherInputForm from "./WeatherInputForm";
 import WeatherCard from "./WeatherCard";
+import Chatbot from "../dashboard/Chatbot";
 
 function WeatherApp() {
     const [selectedCountry, setSelectedCountry] = useState("");
@@ -19,6 +20,7 @@ function WeatherApp() {
                     <WeatherCard country={selectedCountry} city={selectedCity} />
                 )}
             </div>
+            <Chatbot />
         </>
     );
 }

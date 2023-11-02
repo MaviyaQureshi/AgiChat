@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from "../../assets/logo.png"
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
     return (
@@ -13,11 +14,11 @@ const NavBar = () => {
                     <span className="anchor">
 
                         <span className='buttons'>Home</span>
-                        <span className='buttons'>Weather</span>
+                        <Link to='/dashboard' style={{ textDecoration: 'none' }}><span className='buttons'>Weather</span></Link>
                         <span className='buttons'>Market</span>
-                        <span className='buttons'>Inventory</span>
+                        <Link to='/inventory' style={{ textDecoration: 'none' }}><span className='buttons'>Inventory</span></Link>
                     </span>
-                    <button className='login'>Log out</button>
+                    <Link to='/' style={{ textDecoration: 'none' }}><button className='login'>Log out</button></Link>
                 </div>
             </div>
         </>

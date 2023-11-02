@@ -8,7 +8,6 @@ const DashBoard = () => {
         <>
             <NavBar />
             <WeatherApp />
-            <Chatbot />
         </>
     )
 }
