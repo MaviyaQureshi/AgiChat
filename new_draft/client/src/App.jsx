@@ -46,7 +46,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/inventory',
-    element: <ProtectRoute><Library></Library></ProtectRoute>
+    element: <Library></Library>
   },
   {
     path: '*',

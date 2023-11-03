@@ -104,22 +104,25 @@ const Library = () => {
     return (
         <>
             <NavBar />
-            <h1 className="title">Library</h1>
-            <hr />
-            <div className="container">
-                <div className="card-grid">
-                    {cardData.map((card, index) => (
-                        <div key={card.id} className={`card1 ${showFullText[index] ? 'full-text' : ''}`}>
-                            <img src={card.image} alt="" />
-                            <h3>{card.title}</h3>
-                            <span className={`${showFullText[index] ? 'show' : ''}`}>
-                                {showFullText[index] ? card.text : card.text.slice(0, characterLimit)}
-                            </span>
-                            <button onClick={() => toggleText(index)}>
-                                {showFullText[index] ? "View Less" : "View More"}
-                            </button>
-                        </div>
-                    ))}
+            <div className="lib">
+
+                <h1 className="title">Library</h1>
+                <hr />
+                <div className="container">
+                    <div className="card-grid">
+                        {cardData.map((card, index) => (
+                            <div key={card.id} className={`card1 ${showFullText[index] ? 'full-text' : ''}`}>
+                                <img src={card.image} alt="" />
+                                <h3>{card.title}</h3>
+                                <span className={`${showFullText[index] ? 'show' : ''}`}>
+                                    {showFullText[index] ? card.text : card.text.slice(0, characterLimit)}
+                                </span>
+                                <button onClick={() => toggleText(index)}>
+                                    {showFullText[index] ? "View Less" : "View More"}
+                                </button>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
             <Chatbot />

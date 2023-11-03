@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+.lib {
+    background-image: url("../images/white.jpg");
+    margin: -40px -8px -8px -8px;
+}
+
 * {
     font-family: 'Poppins';
 }
